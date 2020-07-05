@@ -1,0 +1,13 @@
+
+
+USE DBproductqrbarcode
+GO
+
+CREATE TABLE dbo.Product (
+	codeBarQR NVARCHAR(20) PRIMARY KEY,
+	nameProduct NVARCHAR(max) NULL,
+	Price NVARCHAR(max) NULL, 
+	dateCreate DATETIME NULL,
+	Descriptions NVARCHAR(max) NULL, 
+	pathImage NVARCHAR(max) NULL
+)

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBproductqrbarcodeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="codeBarQR" />
+    </Key>
+    <Property Name="codeBarQR" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="nameProduct" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="dateCreate" Type="DateTime" Precision="3" />
+    <Property Name="Descriptions" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="pathImage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="DBproductqrbarcodeEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Products" EntityType="Self.Product" />
+  </EntityContainer>
+</Schema>
